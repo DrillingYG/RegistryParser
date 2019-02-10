@@ -3,6 +3,8 @@
 #include <cstdlib>
 #include <iostream>
 #include <string>
+#include <vector>
+#include <fstream>
 
 using namespace std;
 
@@ -94,6 +96,6 @@ private:
 };
 
 void PrintError(string errorMsg);
-void getFileDump(const U8 fileName[], U64 offset, U64 fileSize);
+void getFileDump(const char fileName[], vector<U8> & buf, U64 offset, U64 fileSize);
 
 #pragma pack()
